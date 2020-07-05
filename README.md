@@ -11,7 +11,6 @@ call `set_str` method to set str, and set timer to refresh buffer by calling `dr
 
 `
 set_str('hello world.')
-
 tmr.create():alarm(300, tmr.ALARM_AUTO, draw) 
 `
 
@@ -19,15 +18,10 @@ or
 
 `
 tmr.create():alarm(3000, tmr.ALARM_AUTO, function()
-
   http.get('', nil, function(code, data)
-  
     set_str(data)
-    
   end)
-  
 end)
-
 tmr.create():alarm(300, tmr.ALARM_AUTO, draw) 
 `
 
